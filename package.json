@@ -1,0 +1,13 @@
+{
+  "name"         : "valor-uva",
+  "version"      : "1.1.0",
+  "description"  : "Obtener valor actual de la UVA en la homepage bcra.gov.ar",
+  "main"         : "server.js",
+  "author"       : "gcamporotondi",
+  "dependencies" : {
+    "express"    : "latest",
+    "request"    : "latest",
+    "cheerio"    : "latest",
+    "async"      : "latest"
+  }
+}
