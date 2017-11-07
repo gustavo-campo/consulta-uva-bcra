@@ -1,6 +1,10 @@
+//Usamos request como cliente HTTP por su simplicidad https://github.com/request/request
 var request = require('request');
+//Cheerio es una implementacion de jQuery para NodeJS https://github.com/cheeriojs/cheerio
 var cheerio = require('cheerio');
+// Async nos permite utilizar con facilidad funciones para utilizar JS Asincrónico https://github.com/caolan/async
 var async   = require('async');
+//Módulo estandar para trabajar con el sistema de archivos
 var fs      = require('fs');
 
 async.parallel({
