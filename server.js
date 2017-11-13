@@ -7,8 +7,12 @@ var async   = require('async');
 //Módulo estandar para trabajar con el sistema de archivos
 var fs      = require('fs');
 
+//en la instancia de async llamamos al metodo parallel, que nos permitira hacer varias consultas en paralelo
+//en esta oportunidad hacemos solamente una
 async.parallel({
+      //uva es el nombre del objeto que creamos y al que le asignamos el callback
       uva: function(callback) {
+          //aqui la url del sitio oficial del bcra
           url = 'http://www.bcra.gov.ar/';
           request(url, function(error, response, html){
             if(!error){
